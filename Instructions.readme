@@ -1,0 +1,40 @@
+﻿=== Tarty ===
+Targeting module for companion script "Smarty".
+Designates targets for artillery batteries
+consisting of one or more guns.
+
+Author: DFPercush
+github.com/DFPercush
+Buy me a coffee: ko-fi/com/DFPercush
+
+
+Make a ship with a camera, antenna, and this script.
+LCD Panel or cockpit is optional.
+Make a button on your hotbar with the argument "target".
+Point the camera at your target and hit that button.
+You may want to customize the radio channel in config.
+
+
+Special commands:
+	"target" - Select a target with the camera.
+	"link"   - Establish connection with all guns on this channel.
+	           Not strictly necessary, but useful for display setup.
+	"unlink" - Stops communications from gun crafts.
+
+All other commands entered into this script will be passed along
+to each gun's Smarty script. So all Smarty commands like "stow",
+"high", "low", "open fire", and "cease fire" are all available here.
+
+
+Status symbols
+These icons are shown on the LCD display, if you have one, indicating
+the status of each gun.
+
+Orange circle - Idle.
+Red X - Went offline via a "stop" command.
+	Note: Guns which lose their comms may drop off the display
+	after a timeout.
+Danger sign (exclamation point in orange triangle) - Firing.
+Green up arrow: Ready to fire.
+Yellow spinning loading symbol: Moving into position.
+"No entry" Red circle with white line - Target is out of range.
